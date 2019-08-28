@@ -26,10 +26,10 @@ ADD src/settings.json /xbs-api/config
 RUN rm /tmp/*
 
 ENV PATH="/node/bin:${PATH}"
-ENV XBROWSERSYNC_DB_HOST="localhost"
+ENV XBROWSERSYNC_DB_HOST="127.0.0.1"
 ENV XBROWSERSYNC_DB_PORT="27017"
 ENV XBROWSERSYNC_DB_USER="xbrowsersyncdb"
-ENV XBROWSERSYNC_DB_PWD="setme"
+ENV XBROWSERSYNC_DB_PWD="password"
 
 WORKDIR /xbs-api
 

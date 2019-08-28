@@ -1,7 +1,5 @@
-#!/usr/bin/execlineb -P
-
-with-contenv
-s6-envuidgid xbs
+#!/usr/bin/with-contenv sh
 
 cd /xbs-api
-node dist/api.js
+
+exec s6-setuidgid xbs node dist/api.js
