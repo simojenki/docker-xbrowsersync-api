@@ -1,0 +1,19 @@
+#!/usr/bin/with-contenv bash
+
+PUID=${PUID:-1099}
+PGID=${PGID:-1099}
+
+groupadd \
+    --gid "$PGID" \
+    xbs
+
+useradd \
+    --home-dir "/xbs-api" \
+    --gid xbs \
+    --no-create-home \
+    --uid "$PUID" \
+    --shell "/usr/sbin/nologin" \
+    xbs
+
+echo "User xbs(uid:$(id -u xbs), gid:$(id -g xbs))"
+

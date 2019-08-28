@@ -1,0 +1,48 @@
+{
+  "allowedOrigins": [],
+  "dailyNewSyncsLimit": 0,
+  "db": {
+    "authSource": "admin",
+    "connTimeout": 30000,
+    "host": "XBROWSERSYNC_DB_HOST",
+    "name": "xbrowsersync",
+    "useSRV" : false,
+    "username": "",
+    "password": "",
+    "port": XBROWSERSYNC_DB_PORT
+  },
+  "log": {
+    "file" : {
+      "enabled": false
+    },
+    "stdout": {
+      "enabled": true,
+      "level": "info"
+    }
+  },
+  "maxSyncs": 5242,
+  "maxSyncSize": 512000,
+  "server": {
+    "behindProxy": false,
+    "host": "0.0.0.0",
+    "https": {
+      "certPath": "",
+      "enabled": false,
+      "keyPath": ""
+    },
+    "port": 8080
+  },
+  "status": {
+    "allowNewSyncs": true,
+    "message": "",
+    "online": true
+  },
+  "tests": {
+    "db": "xbrowsersynctest",
+    "port": 8081
+  },
+  "throttle": {
+    "maxRequests": 1000,
+    "timeWindow": 300000
+  }
+}

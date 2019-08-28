@@ -1,0 +1,6 @@
+#!/usr/bin/with-contenv bash
+
+cd /xbs-api/config
+
+sed -i "s/XBROWSERSYNC_DB_HOST/$XBROWSERSYNC_DB_HOST/" settings.json
+sed -i "s/XBROWSERSYNC_DB_PORT/$XBROWSERSYNC_DB_PORT/" settings.json
